@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Notify</title>
+
+  <!-- bootstrap css  -->
+  <link rel="stylesheet" href="../src/css/bootstrap.css">
+  <!-- Base css with customised bootstrap included -->
+  <link rel="stylesheet" href="../src/css/miri-ui-kit-free.css">
+  <!-- Stylesheet for demo page specific css -->
+  <link rel="stylesheet" href="./assets/css/demo.css">
+  <!-- fontawesome css  -->
+  <link rel="stylesheet" href="../src/fontawesome/css/all.css">
+
+</head>
+
+<body class="bg-gradient-white">
+  <header class="miri-ui-kit-header">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark fixed-on-scroll bg-transparent mb-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Research_Notify</a>
+        <h4><a href="" class="text-light">Research Notify</a></h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#miriUiKitNavbar"
+          aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="mdi mdi-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="miriUiKitNavbar">
+          <div class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://bootstrapdash.com/demo/miri-ui-kit-pro/documentation/documentation.html"
+                target="_blank" style="color: rgb(99, 199, 53);">Add Event</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="http://bootstrapdash.com/demo/miri-ui-kit-pro/documentation/documentation.html"
+                target="_blank" style="color: rgb(99, 199, 53);">About Us</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#demo-content" style="color: rgb(99, 199, 53);">Top 50 Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#demo-content" style="color: rgb(99, 199, 53);">FAQ</a>
+            </li>
+
+            <li class="nav-item">
+
+              <a class="nav-link nav-icon icon-fb" href="#"><i class="mdi mdi-facebook-box"></i></a>
+
+              <a class="nav-link nav-icon icon-twitter" href="#"><i class="mdi mdi-twitter-box"></i></a>
+
+              <a class="nav-link nav-icon icon-insta" href="#"><i class="mdi mdi-instagram"></i></a>
+
+            </li>
+
+            <form action="#" class="form-inline ml-lg-3">
+              <button class="btn btn-danger mx-2">Login</button>
+              <button class="btn btn-danger">Signin</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+      <div class="container">
+        <h4 class="text-light ">Research Notify</h4>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent3"
+          aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Add Event</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Top 50 event.html">Top 50 Event</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item active">
+              <div class="btn-group">
+                <a class="text-white btn btn-soft-danger" href="login.html">Login</a>
+                <a class="text-white btn btn-danger" href="signin.html">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-8">
+          <h1 class="display-3 text-white text-center">Search Event</h1>
+          <form action="" class="input-group" style="border-start-end-radius: 15px;">
+              <select class="form-select col-3" aria-label="Default select example">
+                <option selected>Country</option>
+                <option value="1">America</option>
+                <option value="2">Aferica</option>
+                <option value="3">Canada</option>
+                <option value="4">India</option>
+                <option value="5">Russia</option>
+              </select>
+              <select class="form-select col-3" aria-label="Default select example">
+                <option selected>City</option>
+                <option value="1">Delhi</option>
+                <option value="2">Mumbai</option>
+                <option value="3">Newyork</option>
+              </select>
+              <input class="form-control bg-white" type="text" name="search"
+                placeholder="Events..">  
+              <button class="btn btn-soft-danger col-2" type="button" style="border-start-end-radius: 15px;">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container my-5">
+    <h2 class="text-success my-5">Featured Event</h2>
+    <div class="row mt-2">
+      <div class="col-3 mx-3">
+        <div class="card" style="width: 18rem;">
+          <img src="image/library1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mx-3">
+        <div class="card" style="width: 18rem;">
+          <img src="image/header1.avif" class="card-img-top" alt="..." style="height: 190px;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 mx-3">
+        <div class="card" style="width: 18rem;">
+          <img src="image/library4.jpg" class="card-img-top" alt="..." style="height: 190px;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">World</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-btn-outline-success" text-muted>Nov 12</div>
+            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+              additional content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="image/library1.jpg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Design</strong>
+            <h3 class="mb-0">Post title</h3>
+            <div class="mb-btn-outline-success" text-muted>Nov 11</div>
+            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="image/library2.jpg" role="img"
+              aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+              dy=".3em"></text></img>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="container mt-2" aria-label="Page navigation">
+    <ul class="pagination">
+      <li class="page-sm-item disabled"><a class="page-link" href="#">Prev</a></li>
+      <li class="page-sm-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-sm-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-sm-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-sm-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+  <div class="container" id="demo-content">
+    <div class="row">
+      <div class="col-5">
+        <div class="card mb-4 mx-3 mt-4">
+          <h2 class="text-success mx-2">Top categeory</h2>
+          <ul>
+            <a href="">
+              <li>Engineering</li>
+            </a>
+            <a href="">
+              <li>Medicine</li>
+            </a>
+            <a href="">
+              <li>Bussiness</li>
+            </a>
+            <a href="">
+              <li>Mathematics</li>
+            </a>
+            <a href="">
+              <li>Life science</li>
+            </a>
+            <a href="">
+              <li>Law</li>
+            </a>
+            <a href="">
+              <li>Social science</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class=" card col-5 mb-4 mt-4">
+        <h2 class="text-success">Popular Events</h2>
+        <ul>
+          <div class="card  bg-light text-center text-success">
+           
+              <li>Engineering</li>
+          
+          </div>
+         <div class="card mt-1 bg-secondary text-center text-success">
+          
+            <li>Medicine</li>
+          
+         </div>
+          <div class="card mt-1 bg-light text-center text-success">
+            
+              <li>Bussiness</li>
+            
+          </div>
+          <div class="card mt-1 bg-secondary text-center text-success">
+          
+              <li>Mathematics</li>
+          
+          </div>
+         <div class="card mt-1 bg-light text-center text-success">
+          
+            <li>Life science</li>
+          
+         </div>
+          <div class="card mt-1 bg-secondary text-center text-success">
+          
+              <li>Law</li>
+      
+          </div>
+          <div class="card mt-1 bg-light text-center text-success">
+            
+              <li>Social science</li>
+        
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="card card-demo-wrapper">
+      <div class="card-body mb-4">
+        <h2 class="card-title text-success">Brows Event By City</h2>
+        <div class="container mt-3">
+
+          <div class="row row-cols-btn-outline-success" row-cols-sm-2 row-cols-md-3 g-3>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/newyork.avif"
+                  role="img" aria-label="Placeholder: Newyork" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Newyork</text></img>
+
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <div class="mb-1 text-muted">12 Nov 2022</div> 
+                   
+                     </div>
+                    <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/delhi.jpg" role="img"
+                  aria-label="Placeholder: Delhi" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Delhi</text></img>
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <div class="mb-1 text-muted">12 Nov 2022</div>
+                   </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/mumai.avif" role="img"
+                  aria-label="Placeholder: California" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Mumbai</text></img>
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <div class="mb-1 text-muted">12 Nov 2022</div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/singapur.avif"
+                  role="img" aria-label="Placeholder: singapur" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Singapur</text></img>
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <div class="mb-1 text-muted">12 Nov 2022</div>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+       <button class="btn btn-danger">view all</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container content-wrapper" id="demo-content">
+    <div class="card card-demo-wrapper">
+      <div class="card-body mb-4">
+        <h2 class="card-title text-success">Brows Event By Country</h2>
+        <div class="container mt-3">
+
+          <div class="row row-cols-btn-outline-success" row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/russia.jpg" role="img"
+                  aria-label="Placeholder: Newyork" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Russia</text></img>
+
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/usa.jpg" role="img"
+                  aria-label="Placeholder: Delhi" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Usa</text></img>
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm text-center">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="image/germany.jpg"
+                  role="img" aria-label="Placeholder: California" preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Germany</text></img>
+
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <button class="btn btn-danger">view all</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <h2 class="text-success">Event by Oraniser</h2>
+    <div class="container mt-3">
+      <div class="row mb-4">
+
+        <div class="card col-2 mx-2">
+          <img src="image/iit roorki.avif" alt="roorki" style="height: 150px;">
+        </div>
+        <div class="card col-2 mx-2">
+          <img src="image/iit roorki.avif" alt="roorki" style="height: 150px;">
+        </div>
+        <div class="card col-2 mx-2">
+          <img src="image/mit.avif" alt="roorki" style="height: 150px;">
+        </div>
+        <div class="card col-2 mx-2">
+          <img src="image/nasa.avif" alt="roorki" style="height: 150px;">
+        </div>
+        <div class="card col-2 mx-2">
+          <img src="image/mit.avif" alt="roorki" style="height: 150px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center mt-5 text-info">
+    <h2 class="text-success">world's Biggest Online Single Platform for Reserch Events!</h2>
+    <p>why you can find the right  opertunity in the right place with us.</p>
+  </div>
+  <div class="container bg-danger">
+    <div class="card">
+      <div class="row">
+       <div class="col mx-3 mt-5 mb-4 text-center">
+        <img class="bd-placeholder-img rounded-circle" width="120" height="100" src="image/motivation3.jpg" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <a href=""><h6>Seminar1</h6></a>
+       </div>
+       <div class="col mx-3 mt-5 mb-4 text-center">
+        <img class="bd-placeholder-img rounded-circle" width="120" height="100" src="image/motivation3.jpg" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <a href=""><h6>Seminar2</h6></a>
+       </div>
+       <div class="col mx-3 mt-5 mb-4 text-center">
+        <img class="bd-placeholder-img rounded-circle" width="120" height="100" src="image/motivation3.jpg" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        <a href=""><h6>Seminar3</h6></a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="container content-wrapper" id="demo-content">
+    <div class="card card-demo-wrapper">
+      <div class="card-body mb-4">
+        <h2 class="card-title text-success">Popular Speaker</h2>
+        <div class="container">
+          <div class="row">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="image/motivation3.jpg" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        
+                <h2>Speaker1</h2>
+                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="image/motivation2.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        
+                <h2>speaker2</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="image/motivation1.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+        
+                <h2>speaker3</h2>
+                <p>And lastly this, the third column of representative placeholder content.this time we have moved on second column.</p>
+                <p><a class="btn btn-secondary" href="#">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-2">
+    <h2 class="text-success">Upcoming Conferences</h2>
+  </div>
+  <div class="container mt-3">
+    <div class="card col-md-6 mt-2">
+      <ul>
+        <span class="badge bg-secondary mx-1 mb-2 mt-2" style="width: 80px; height: 40px;"> 2019</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2020</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2021</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2022</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2023</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2024</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2025</span>
+        <span class="badge bg-secondary mx-1" style="width: 80px; height: 40px;"> 2026</span>
+        <span class="badge bg-secondary mx-1 text-light" style="width: 80px; height: 40px;"> 2027</span>
+        <span class="badge bg-secondary mx-1 text-light" style="width: 80px; height: 40px;"> More</span>
+
+      </ul>
+    </div>
+  </div>
+  <div class="container mt-5"> 
+  <div class="card">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-4 mx-3 text-center">
+          <div class="container">
+            <h6>Get Updates & More so..please subscribe for more details!!</h6>
+          <h3>Thoughtful thoughts to your inbox</h3>
+          </div>
+        </div>
+        <div class="col-9 mb-5 mx-3" >
+          <div class="container mt-4 text-center">
+            <h2 class="text-success">Subscribe Form</h2>
+            <div class="container card col-6">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">FullName*</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Username" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom02" class="form-label">Email*</label>
+                  <input type="emai" class="form-control" id="validationCustom02" value="email" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-danger mb-2" type="submit">Submit form</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mt-5">
+    <h2 class="text-success">Recent Post</h2>
+  </div>
+  <div class="container mt-2">
+    <div class="card bg-success">
+
+      <ul class="">
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+        <a href="">
+          <li>Upcoming Pharama Confrencing in india </li>
+        </a>
+      </ul>
+    </div>
+  </div>
+
+  <footer class=" mt-3">
+    <div class="card text-center" style="background-color: #495057;">
+      <div class="card-body">
+        <div class="col-md-12 text-center">
+          <a href="." id="whiteLink" style="color: #fff;">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="subscribe" id="whiteLink" style="color: #fff;">Subscribe</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="unsubscribe" id="whiteLink" style="color: #fff;">Unsubscribe</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="add-your-event" id="whiteLink"
+            style="color: #fff;">Add&nbsp;event</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="conal-conference-alerts-promotion-options" id="whiteLink"
+            style="color: #fff;">Promote&nbsp;event</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="contact-us" id="whiteLink"
+            style="color: #fff;">Contact&nbsp;us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="terms-of-use" id="whiteLink"
+            style="color: #fff;">Terms&nbsp;of&nbsp;use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="help" id="whiteLink" style="color: #fff;">Help</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          <a href="FAQ" id="whiteLink" style="color: #fff;">how Can Use Our Site</a>
+        </div>
+        <h5 class="card-title mt-2" style="color: #fff;">This is all about my Web site!</h5>
+        <p class="card-text" style="color: #fff;">With supporting text below as a natural lead-in to additional content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="col-md-12 text-center">
+        <span class="small" style="color: #fff;">© Copyright 2000 - 2022 Conal Conference Alerts</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../src/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../src/vendors/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../src/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../src/js/miri-ui-kit.js"></script>
+</body>
+
+</html>
